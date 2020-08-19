@@ -1,0 +1,12 @@
+@media (max-width: 945px) {
+    .preloader {
+        position: fixed;
+        left: 40%;
+        top: 40%;
+        width: 50%;
+        height: 50%;
+        z-index: 9999;
+        background: url('assets/img/carga4.gif')no-repeat;
+        opacity: .8;
+    }
+}
