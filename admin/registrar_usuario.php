@@ -4,7 +4,7 @@ $email= $_POST['email'];
 $tipo=$_POST['tipo'];
 $clave=$_POST['pass1'];
 
-$conn = new mysqli('localhost','yEOttoeeI4', 'Xnlm0BCzme', 'yEOttoeeI4'); //direccion ip, passw, bd
+$conn = new mysqli('remotemysql.com','yEOttoeeI4', 'Xnlm0BCzme', 'yEOttoeeI4'); //direccion ip, passw, bd
  if($conn->connect_error){
      echo $error->$conn->connect_error;
  }
