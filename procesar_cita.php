@@ -68,9 +68,9 @@ $entidad="particular";
      else {
         //Si la imagen es correcta en tamaño y tipo
         //Se intenta subir al servidor
-        if (move_uploaded_file($temp, 'images/'.$archivo)) {
+        if (move_uploaded_file($temp, 'https://remotemysql.com/images/'.$archivo)) {
             //Cambiamos los permisos del archivo a 777 para poder modificarlo posteriormente
-            chmod('images/'.$archivo, 0777);
+            chmod('https://remotemysql.com/images/'.$archivo, 0777);
         }
         else {
            //Si no se ha podido subir la imagen, mostramos un mensaje de error
