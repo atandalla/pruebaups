@@ -12,7 +12,7 @@ if(!isset($_SESSION['administracion']))
     exit();
 }
 
-$mysqli = new mysqli('remotemysql.com','yEOttoeeI4', 'Xnlm0BCzme', 'yEOttoeeI4');
+$mysqli = new mysqli('localhost','yEOttoeeI4', 'Xnlm0BCzme', 'yEOttoeeI4');
   $query = $mysqli -> query ("SELECT id_tipo,tipo FROM tipo_usuario");
 
 ?>
