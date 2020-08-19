@@ -70,7 +70,8 @@ $entidad="particular";
         //Se intenta subir al servidor
         if (move_uploaded_file($temp, 'images/'.$archivo)) {
             //Cambiamos los permisos del archivo a 777 para poder modificarlo posteriormente
-            sudo chmod('images/'.$archivo, 0755);
+            sudo chmod('images/'.$archivo, 0777);
+
         }
         else {
            //Si no se ha podido subir la imagen, mostramos un mensaje de error
